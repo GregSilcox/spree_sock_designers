@@ -1,0 +1,7 @@
+-# Called by Deface for the product/show page.
+- user = Spree::User.find @product.spree_user_id
+- id = @product.spree_user_id
+- path = main_app.sockstar_path id: id
+
+= link_to user.email, path
+
